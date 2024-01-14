@@ -1,0 +1,16 @@
+<!-- src/app/app.component.html -->
+
+<div id="app-container">
+  <input type="checkbox" id="toggle-btn" />
+
+  <app-sidebar></app-sidebar>
+
+  <div id="content">
+    <div id="header">
+      <label for="toggle-btn">&#9776; Toggle Sidebar</label>
+    </div>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div id="sidebar">
+  <ul>
+    <app-menu
+      *ngFor="let menu of Menus"
+      [MenuName]="menu.name"
+      [MenuPath]="menu.path"
+      [Submenus]="menu.submenus"
+    ></app-menu>
+  </ul>
+</div>

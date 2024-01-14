@@ -1,0 +1,8 @@
+<li *ngIf="Submenus.length > 0">
+  {{ MenuName }}
+  <ul *ngFor="let submenu of Submenus">
+    <li routerLink="/users/view">{{ submenu.name }}</li>
+  </ul>
+</li>
+
+<li [routerLink]="MenuPath" *ngIf="Submenus.length == 0">{{ MenuName }}</li>
